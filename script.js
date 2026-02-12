@@ -1,9 +1,45 @@
 //complete this code
-class Animal {}
+class Animal {
+ constuctor (name)
+	{
+		this.name=name;
+	}
+	get name ()
+	{
+		return this.name;
+	}
 
-class Dog extends Animal {}
+	makesound()
+	{
+		console.log(`The ${this.name} make a sound`);
+	}
+}
 
-class Cat extends Animal {}
+class Dog extends Animal {
+	constuctor(name)
+	{
+		super(name);
+	}
+	
+	bark()
+	{
+		console.log("woof");
+	}
+	
+}
+
+class Cat extends Animal {
+	constuctor(name)
+	{
+		super(name);
+	}
+	
+	purr()
+	{
+		console.log("purr");
+	}
+	
+}
 
 // Do not change the code below this line
 window.Animal = Animal;
